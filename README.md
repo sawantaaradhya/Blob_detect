@@ -68,6 +68,10 @@ THIS IS THE DOCUMENTARY FOR THIS PACKAGE
 		To apply Kalman filter, we need to have a correct understanding of how it works.
 		References : Youtube tutorials(see as many as you can, then you will get it)(I prefer it over udacity)
 		References : https://classroom.udacity.com/courses/ud810 
+
+		IMPROVEMENTS POSSIBLE:
+			1. Making Kalman filter less susceptible to large changes in sensor values.
+			2. Detecting reflection in the water. This happens when there is large difference in sensor and prediction values of center of mass. It must be noted that at the same time, there is not a remarkable difference in sensor and prediction values of center of mass. If somehow the fact large change in position would add up deciding the measurement of radius, then it would be great. 
 		
 3. Testing on videos given
 
