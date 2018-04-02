@@ -66,6 +66,21 @@ THIS IS THE DOCUMENTARY FOR THIS PACKAGE
 		This file subscribes to the topic "position", applies the Kalman Filter on the received COM and radius, and publishes the measured COM/radius on the topic. 
 		Note that Noise Covariance Matrix is the property of sensor itself. For correct setup, we need to observe the error sensor does when we already know its position accurately.
 		To apply Kalman filter, we need to have a correct understanding of how it works.
-		References : Youtube tutorials(see as many as you can, then you will get it).
+		References : Youtube tutorials(see as many as you can, then you will get it)(I prefer it over udacity)
+		References : https://classroom.udacity.com/courses/ud810 
 		
+3. Testing on videos given
+
+	Task folder contains the testing code (just opencv used) to observe how the bouy is being tracked.
+	The red circle displays the representation of center and radius observed by the sensor(video feed and image processing in our case).
+	The blue circle displays the representation of center and radius measured by Kalman filter. 
+	You can clearly see how well the bouy is being tracked using this.
+	How to run the code?
+		1. Open Task folder and open terminal pointing to that location.
+		2. Run 
+			$ cmake .
+			$ make
+			$ ./blob
+			
+	
   
