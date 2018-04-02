@@ -49,7 +49,7 @@ int main(int argc, char **argv)
     Mat rangeRes = cv::Mat::zeros(res.size(), CV_8UC1);
     Mat lower_red_hue_range;
     Mat upper_red_hue_range;
-    int x=40;
+    int x=20;
     int y=20;
     int lhue=15;
     int hhue=100;

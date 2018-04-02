@@ -4,10 +4,27 @@ THIS IS THE DOCUMENTARY FOR THIS PACKAGE
 
 	Pre-requisites: OpenCV and ROS must be installed in the system.
 	STEPS:
-	1. 
+		1. Open four terminals in the directory where this package is extracted.
+		2. In first terminal, input the following commands:
+			1. source /opt/ros/kinetic/setup.bash
+		`	2. catkin_make
+			3. source devel/setup.bash
+			4. roscore
+		
+		3. In second terminal, input the following commands:
+			1. source /opt/ros/kinetic/setup.bash
+			2. source devel/setup.bash
+			3. rosrun image_transport_tutorial my_publisher 0
 
+		4. In third terminal, input the following commands:
+			1. source /opt/ros/kinetic/setup.bash
+			2. source devel/setup.bash
+			3. rosrun image_transport_tutorial my_subscriber
 
-
+		5. In fourth terminal, input the following commands:
+			1. source /opt/ros/kinetic/setup.bash
+			2. source devel/setup.bash
+			3. rosrun image_transport_tutorial my_subscriber2 
 
 
 
