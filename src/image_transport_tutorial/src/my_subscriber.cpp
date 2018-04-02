@@ -10,6 +10,7 @@ using namespace std;
 
 Mat res;
 
+//The callback function below is used to subscribe to the published image.
 void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 {
   try
@@ -41,9 +42,9 @@ int main(int argc, char **argv)
     if(!res.empty())
     {
     Mat blur;
-    GaussianBlur(res, blur,Size(5,5),3,3);
+    GaussianBlur(res, blur,Size(5,5),3,3);//GAUSSIAN BLUR
     Mat frmHsv;
-    cvtColor(blur, frmHsv, CV_BGR2HSV);
+    cvtColor(blur, frmHsv, CV_BGR2HSV); //CONVERSION FROM BGR TO HSV FOR BETTER THRESHOLDING.
     Mat red(res.rows,res.cols,CV_8UC1,Scalar(0));
     Mat rangeRes = cv::Mat::zeros(res.size(), CV_8UC1);
     Mat lower_red_hue_range;
