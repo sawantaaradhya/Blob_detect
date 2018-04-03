@@ -5,6 +5,8 @@ THIS IS THE DOCUMENTARY FOR THIS PACKAGE
 	Pre-requisites: OpenCV and ROS must be installed in the system.
 	STEPS:
 		1. Open four terminals in the directory where this package is extracted.
+		
+
 		2. In first terminal, input the following commands:
 			1. source /opt/ros/kinetic/setup.bash
 		`	2. catkin_make
@@ -12,17 +14,14 @@ THIS IS THE DOCUMENTARY FOR THIS PACKAGE
 			4. roscore
 		
 		3. In second terminal, input the following commands:
-			1. source /opt/ros/kinetic/setup.bash
 			2. source devel/setup.bash
 			3. rosrun image_transport_tutorial my_publisher 0
 
 		4. In third terminal, input the following commands:
-			1. source /opt/ros/kinetic/setup.bash
 			2. source devel/setup.bash
 			3. rosrun image_transport_tutorial my_subscriber
 
 		5. In fourth terminal, input the following commands:
-			1. source /opt/ros/kinetic/setup.bash
 			2. source devel/setup.bash
 			3. rosrun image_transport_tutorial my_subscriber2 
 
@@ -72,7 +71,9 @@ THIS IS THE DOCUMENTARY FOR THIS PACKAGE
 		IMPROVEMENTS POSSIBLE:
 			1. Making Kalman filter less susceptible to large changes in sensor values.
 			2. Detecting reflection in the water. This happens when there is large difference in sensor and prediction values of center of mass. It must be noted that at the same time, there is not a remarkable difference in sensor and prediction values of center of mass. If somehow the fact large change in position would add up deciding the measurement of radius, then it would be great. 
-		
+			Adaptive Kalman Filters/ Extended Kalman Filters MAY prove better.
+
+
 3. Testing on videos given
 
 	Task folder contains the testing code (just opencv used) to observe how the bouy is being tracked.
