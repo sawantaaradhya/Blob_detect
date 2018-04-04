@@ -77,7 +77,7 @@ Pro tip: Use fullscreen for reading this ;)
 
 		IMPROVEMENTS POSSIBLE:
 			1. Making Kalman filter less susceptible to large changes in sensor values.
-			2. Detecting reflection in the water. This happens when there is large difference in sensor and prediction values of center of mass. It must be noted that at the same time, there is not a remarkable difference in sensor and prediction values of center of mass. If somehow the fact large change in position would add up deciding the measurement of radius, then it would be great. 
+			2. Detecting reflection in the water. This happens when there is large difference in sensor and prediction values of center of mass. It must be noted that at the same time, there is not a remarkable difference in sensor and prediction values of radius. If somehow the fact large change in position would add up deciding the measurement of radius, then it would be great. 
 			Adaptive Kalman Filters/ Extended Kalman Filters MAY prove better.
 
 
