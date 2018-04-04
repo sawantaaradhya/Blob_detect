@@ -1,5 +1,7 @@
 THIS IS THE DOCUMENTARY FOR THIS PACKAGE
 
+Pro tip: Use fullscreen for reading this ;)
+
 1. HOW TO USE THIS PACKAGE?
 
 	Pre-requisites: OpenCV and ROS must be installed in the system.
@@ -41,7 +43,12 @@ THIS IS THE DOCUMENTARY FOR THIS PACKAGE
 			http://wiki.ros.org/cv_bridge
 			
 		I have used http://wiki.ros.org/image_transport/Tutorials/PublishingImages as a major part of my code.
-		ERROR: Whenever I use VideoCapture Cap("Video_location") instead of VideoCapture Cap(0), it doesn't work. 
+		
+
+		ERROR: 
+			
+			Whenever I use VideoCapture Cap("Video_location") instead of VideoCapture Cap(0), it doesn't work. 
+			I have scratched my head on this issue already, I'll find the fix soon. Though this problem won't affect the actual scenario.
 
 	2. src/image_transport_tutorial/src/my_subscriber.c
 		
@@ -79,13 +86,20 @@ THIS IS THE DOCUMENTARY FOR THIS PACKAGE
 	Task folder contains the testing code (just opencv used) to observe how the bouy is being tracked.
 	The red circle displays the representation of center and radius observed by the sensor(video feed and image processing in our case).
 	The blue circle displays the representation of center and radius measured by Kalman filter. 
+	It's the same code used above, but there is no need of publishing/subscribing here.
 	You can clearly see how well the bouy is being tracked using this.
+	
 	How to run the code?
+	
+
 		1. Open Task folder and open terminal pointing to that location.
 		2. Run 
 			$ cmake .
 			$ make
 			$ ./blob
-			
+
+	Why didn't I implement testing in the package itself?
+		It's because of the bug mentioned above     (           can't publish video feed :(            )
+				
 	
   
